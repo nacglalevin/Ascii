@@ -1,7 +1,7 @@
 ### 介绍
 此项目移植于网页版字符画生成器，最初是为了方便公众号生成图文素材的封面图片。移植到Linux下后，不仅可以更方便生成字符画，也可应用于linux命令行模式下，使其文字提示更加醒目美观。
 ### 文件说明
-#### ascii_signature.sh
+#### ascii.sh
 此文件为工具主程序，实现了查询当前可用字体，根据参数生成目标字符画的功能。
 - 目前支持对大小写英文字母和数字转化，暂不支持特殊字符
 - 脚本内自带一种默认字符画，其他字符画依赖于相同路径下`font`文件夹
@@ -9,15 +9,15 @@
 
 具体操作如下：
 ```
-$ ./ascii_signature.sh
+$ ./ascii.sh
 usage:
-    ./ascii_signature.sh --font|-f $font --str|-s $string   do work
+    ./ascii.sh --font|-f $font --str|-s $string   do work
                          --list|-l                            list all supported font
 
-$ ./ascii_signature.sh -l
+$ ./ascii.sh -l
 smkeyboard(default) blocks bubble doom smpoison template timesofl univers
 
-$ ./ascii_signature.sh -s Diag -f univers
+$ ./ascii.sh -s Diag -f univers
 88888888ba,   88 
 88      `"8b  "" 
 88        `8b    
@@ -37,12 +37,12 @@ $
 ```
 $ ls font/
 blocks  bubble  doom  smpoison  template  timesofl  univers
-$ ./ascii_signature.sh -s Diag 
+$ ./ascii.sh -s Diag 
  ____  ____  ____  ____ 
 ||D ||||i ||||a ||||g ||
 ||__||||__||||__||||__||
 |/__\||/__\||/__\||/__\|
-$ ./ascii_signature.sh -s Diag -f blocks
+$ ./ascii.sh -s Diag -f blocks
  .----------------.  .----------------.  .----------------.  .----------------.
 | .--------------. || .--------------. || .--------------. || .--------------. |
 | |  ________    | || |     _____    | || |      __      | || |    ______    | |
@@ -55,13 +55,13 @@ $ ./ascii_signature.sh -s Diag -f blocks
 | '--------------' || '--------------' || '--------------' || '--------------' |
  '----------------'  '----------------'  '----------------'  '----------------' 
 
-$ ./ascii_signature.sh -s Diag -f bubble
+$ ./ascii.sh -s Diag -f bubble
   _    _    _    _  
  / \  / \  / \  / \ 
 ( D )( i )( a )( g )
  \_/  \_/  \_/  \_/ 
 
-$ ./ascii_signature.sh -s Diag -f doom
+$ ./ascii.sh -s Diag -f doom
 ______   _                  
 |  _  \ (_)                 
 | | | |  _    __ _    __ _  
@@ -71,14 +71,14 @@ ______   _
                       __/ | 
                      |___/  
 
-$ ./ascii_signature.sh -s Diag -f smpoison
+$ ./ascii.sh -s Diag -f smpoison
 @@@@@@@  @@@  @@@@@@   @@@@@@@  
 @@!  @@@ @@! @@!  @@@ !@@       
 @!@  !@! !!@ @!@!@!@! !@! @!@!@ 
 !!:  !!! !!: !!:  !!! :!!   !!: 
 :: :  :  :    :   : :  :: :: :  
 
-$ ./ascii_signature.sh -s Diag -f timesofl
+$ ./ascii.sh -s Diag -f timesofl
      ### ######## ######## ######## 
 #  #  ## ###  ### ######## ######## 
 #  ##  # ######## ###  ### ##   # # 
@@ -88,7 +88,7 @@ $ ./ascii_signature.sh -s Diag -f timesofl
      ### ###   ## ##  #  # ####  ## 
 ######## ######## ######## #    ### 
 
-$ ./ascii_signature.sh -s Diag -f univers
+$ ./ascii.sh -s Diag -f univers
 88888888ba,   88 
 88      `"8b  "" 
 88        `8b    
