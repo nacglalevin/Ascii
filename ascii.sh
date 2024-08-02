@@ -1,13 +1,9 @@
 #!/bin/bash
 ###############################################
-# Filename    :   ascii_signature.sh
-# Author      :   PedroQin
-# Email       :   constmyheart@163.com
-# Date        :   2020-07-05 20:43:28
-# Description :   Add translate punctuation mark 
-# Version     :   1.0.1
-# Date        :   2019-12-11 08:23:03
-# Description :   
+# Filename    :   ascii.sh
+# Author      :   Lalevin Martin
+# Email       :   rsjdcl@gmail.com
+# Date        :   2023-08-01 20:43:28
 # Version     :   1.0.0
 ###############################################
 
